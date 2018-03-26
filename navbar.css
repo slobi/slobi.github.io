@@ -1,0 +1,514 @@
+body {
+     font-family: Tahoma, Arial, cursive;
+     background-image: url(vozovi/pattern.png);
+ }
+.sve {
+    width:1250px;
+}
+section {
+    width: 100%;
+}
+
+.navbar {
+    overflow:hidden;
+    background-color:cadetblue;
+    border: 2px solid black;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 1px;  
+    margin-right: 1px;
+}
+#logo {
+    float: right;
+    overflow:auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/*-------za dugme 1   ------*/
+
+.dropdown1 {
+    float: left;
+    overflow: hidden;
+    width: 159px; /*sirina-velicina dugmeta*/
+}
+
+.dropdown1 .dropbtn1 {
+    font-size: 16px;    
+    border: 0px;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+}
+
+.navbar a:hover {
+    background-color:blueviolet;
+    text-shadow: 0px 0px 18px 18px white;
+}
+.dropdown1:hover .dropbtn1 {
+    background-color:blueviolet;
+    text-shadow: 0px 0px 18px 18px white;
+    text-shadow: 2px grey;
+}
+
+.dropdown-content1 {   /* padajuci meni*/
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; 
+    width: 140px;  /*+min-*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top:55px;
+    font-weight: 400;
+}
+
+.dropdown-content1 a {
+    float: none;
+    color: black;
+    /*padding: 12px 30px;*/
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    display:block;
+    text-align:center;
+    position:relative;
+    right:15px;  /* smaknuto  */
+    
+}
+
+.dropdown-content1 a:hover {
+    background-color: #ddd;
+    border:3px solid #ddd;
+    border-radius: 7px;
+    
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+    z-index: 9;
+}
+
+
+/*----------slike dugmad------*/
+
+
+.container1 {
+    display: inline-block;
+    text-align: justify;
+    position:relative;
+    top:0px;
+    width: 98%;
+}
+.parni,
+.dizel,
+.vagoni,
+.elektricni,
+.tramvaji,
+.metro {
+    width: 180px;
+    height: 135px;
+    background-color:white;
+    background-color:firebrick;
+    /*border: 3px solid #843232;*/
+    border-radius: 25px;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.6);
+    /*3px 5px #ce525c;*/
+    display: inline-block;
+}
+.r img {
+    border-radius: 25px;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
+}
+.stretch {
+  width: 1200px;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+/*              ------sine ----      */
+#sine { 
+   width:100%;
+    height: 50px;
+    background-image: url(vozovi/sine-blanko-small.png);
+    object-fit: contain;
+}
+/*          --------- Lampa   -----------   */
+
+
+.voz-lampa {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    border: 2px solid black;
+    border-radius: 0px 0px 20px 20px;
+    border-top-style: hidden;
+    position: relative;
+}
+.voz-lampa .voz img {
+    width: 600px;
+    height: auto;
+}
+.voz-lampa .voz #dan {
+    display: none;
+    }   
+.voz-lampa #lampa img {
+    width:30%;
+    height:auto;
+    float:  right; 
+    position: absolute;
+    top: 20%;
+    right:6%;
+    }
+.voz-lampa #lampa:hover ~ .voz #dan {
+        display:block;
+    }
+.voz-lampa #lampa:hover ~ .voz #mrak {
+         display: none;
+    }    /*
+.voz-lampa .voz .container p {
+    background-color:#1f5968;
+    color: white;
+    display: block;
+    width: 45%;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-indent: 5px;
+    display: none;
+}
+.voz-lampa .voz .container p .sss {
+    float:right;
+}
+.voz-lampa .voz img:hover .voz-lampa .voz .container p {
+    display:block;
+}*/
+
+footer {
+    width: 99%;
+    height:60px;
+    background-color: #8c5c5c;
+    margin-top: 10px;
+    border-bottom: 5px solid black; 
+    letter-spacing: 2px;
+    display: table;
+    vertical-align:  middle;
+}
+footer h5 {
+    display: inline-block;
+    border: 2px solid black;
+    padding:5px;
+    border-radius: 11px;
+    margin-left: 1.5%;
+}
+footer h5#mail {
+    border:none;
+    
+}
+footer h4 {
+   /* width:300px;*/
+    text-shadow: 3px 3px 2px darkgrey;
+    float:right;
+    margin-right: 4%;
+}
+footer h4 #k4 {
+    text-shadow: none;
+}
+
+/*   -------   Lokomotive      -----------*/
+
+
+.page {
+    width: 90%;
+    /*height: 1800px;*/
+    margin-left: 5%;
+    margin-right:  5%;
+    border: 2px solid black;
+    border-radius:  20px;
+}
+.naslov {
+    width: 100%;
+    height: 60px;
+    border-bottom: 5px solid black;
+    background-color: #8c5c5c;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+    position: relative;
+    top: 0px;
+    text-indent: 20px;
+    
+}
+.naslov h3 {
+    display:inline-block;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 4px 4px black;
+}.page .naslov a img {
+    float:right;
+    border-radius: 20px;
+}
+article {
+    color: white;
+    letter-spacing: 2px;
+    overflow: auto;
+    display: inline-block;
+}
+.page .clanak p {
+    text-indent: 20px;
+    position:relative;
+    top: 15px;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(234, 121, 121, 0.7);
+    max-width:750px;
+    float:left;
+    margin-left: 3px;
+}
+.page .clanak figure {
+    float:right;
+    width: 310px;
+    display:table-cell;
+    text-align: center;
+}
+.page .clanak figure img {
+    border: 1px solid white;
+}
+       /*    presek    */
+#presek {
+    width: 90%;
+    height: 50px;
+    background-image: url(vozovi/dugi-voz3.png);
+    background-size:contain;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+/*   ---------klipovi   ---- */
+
+.klipovi {
+    position: relative;
+    width:60%;
+    margin-left:15%;
+    margin-right: 20%;
+}
+.klipovi iframe {
+    width: 100%;
+    height:350px;
+    border: 1px solid white;
+    margin: 10%;
+}
+.klipovi .kraj {
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    display:block;
+    align-content: center;
+   
+}
+/*      ------------- vagoni     -------   */
+.page .clanak #vag {
+    float:none;
+    clear:both;
+    width: 310px;
+    display:inline-block;
+    text-align: center;
+}
+.page #vag p {
+    float: none;   
+    clear:both;
+}
+/*   ------    pruga    --------  */
+.page .clanak #prug {
+    float:none;
+    clear:both;
+    width: 310px;
+    display:inline-block;
+    text-align: center;
+}
+.page #prug p {
+    float: none;   
+    clear:both;
+}
+.page .zeza {
+    color: white;
+    letter-spacing: 2px;
+    overflow: auto;
+    display: inline-block;
+}
+.page .zeza figure {
+     display: inline-block;
+}
+.page .zeza figure figurecaption {
+     text-align:center;
+    display: block;  
+}
+.page .zeza figure img {
+    text-align: center;
+}
+.page .zeza figure #sl1 {
+    border: 1px solid white;
+    text-align: center;
+}
+.page .zeza figure #sl2 {
+    border: 2px solid black;
+    float:right;
+}
+.page section.klipovi .cr {
+    margin-left: 30%;
+    max-width:15%;
+}
+.page section.slike div.slike img.noborder {
+    border: none;
+}
+/*    --------  parni vozovi  ---------------- */
+.page #parni.clanak {
+    height: 150%;
+}
+.page #parni.clanak p {
+     margin-bottom: 0px;  
+    
+}
+.page #parni.clanak figure img {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.page figure#dec {
+    margin-left:15px;
+    height: 200px;
+}
+.page figure#dec img {
+    clear:right;
+    float:left;
+}
+.page .presek-sine {
+    width: 90%;
+    height: 50px;
+    background-image: url(vozovi/sine6.png);
+    background-size:contain;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.page section.klipovi input {
+    display:none;
+}
+
+.page section.klipovi iframe#content {
+    display:none;
+}
+.page section.klipovi input#show:checked ~ iframe#content {
+  display:block;
+}
+
+.page section.klipovi input#hide:checked ~ iframe#content {
+    display:none;
+}
+.page section.klipovi label span {
+    background-color: white;
+    margin-bottom: 40px;
+    padding:5px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-left: 30%;
+    border: 2px solid grey;
+}
+
+/*    --------  dizel stari      -------- */
+.page article.clanak img#star {
+    padding: 20px;
+}
+.page article.clanak figure#diz img {
+    margin:0px 10px 0px 10px;
+}
+/*      ----dizel novi    -----  */
+
+.page article#d2.clanak figure.diz2 img {
+    float: right;
+}
+.page section.slike div.slike {
+    width: 70%;
+    margin-top: 20px;
+    margin-left:15%;
+    margin-right:15%;
+    display:inline-block;
+    text-align:   center;
+}
+.page section.slike div.slike img {
+    border:1px solid white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*     ------    elektricni       ------    */
+
+.page img#elek {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    border:1px solid black;
+}
+/*    -----  tramvaji    ---- */
+
+.page .presek-tram {
+    background-image: url(vozovi/fence-blanko.png);
+    width: 90%;
+    height: 60px;
+    background-size:contain;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.page .sine-tram {
+    background-image: url(vozovi/sine-tram.jpg);
+    width: 90%;
+    height: 50px;
+    background-size:contain;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+/*    -----  metro    ---- */
+.page .metro-presek {
+    background-image: url(vozovi/metro2-presek.png);
+    width: 90%;
+    height: 60px;
+    background-size:contain;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.page .line-presek {
+    float: right;
+    background-image: url(vozovi/tramline.png);
+    width: 80%;
+    height: 80px;
+    background-size:contain;
+    margin-left: 20%;
+    margin-right: auto;
+    border-bottom-right-radius: 18px;
+    margin-top: 30px;
+}
+/*   -----footer  page  ----*/
+.go-nav {
+    float:right;
+    margin-bottom: 10px;
+}
+.cross {
+    float:left;
+    margin-left: 5%;
+}
+
+
+
+
+
+
