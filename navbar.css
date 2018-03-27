@@ -100,8 +100,6 @@ section {
 
 
 /*----------slike dugmad------*/
-
-
 .container1 {
     display: inline-block;
     text-align: justify;
@@ -117,8 +115,7 @@ section {
 .metro {
     width: 180px;
     height: 135px;
-    background-color:white;
-    background-color:firebrick;
+    background-color:#C73D41;
     /*border: 3px solid #843232;*/
     border-radius: 25px;
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.6);
@@ -143,8 +140,6 @@ section {
     object-fit: contain;
 }
 /*          --------- Lampa   -----------   */
-
-
 .voz-lampa {
     width: 98%;
     margin-left: auto;
@@ -156,7 +151,7 @@ section {
     position: relative;
 }
 .voz-lampa .voz img {
-    width: 600px;
+    width: 50%;
     height: auto;
 }
 .voz-lampa .voz #dan {
@@ -175,24 +170,7 @@ section {
     }
 .voz-lampa #lampa:hover ~ .voz #mrak {
          display: none;
-    }    /*
-.voz-lampa .voz .container p {
-    background-color:#1f5968;
-    color: white;
-    display: block;
-    width: 45%;
-    text-transform: uppercase;
-    border-radius: 10px;
-    text-indent: 5px;
-    display: none;
-}
-.voz-lampa .voz .container p .sss {
-    float:right;
-}
-.voz-lampa .voz img:hover .voz-lampa .voz .container p {
-    display:block;
-}*/
-
+    }    
 footer {
     width: 99%;
     height:60px;
@@ -212,13 +190,16 @@ footer h5 {
 }
 footer h5#mail {
     border:none;
-    
+    display: none;
+}
+footer h5:hover ~ h5#mail {
+    display:inline;
 }
 footer h4 {
-   /* width:300px;*/
     text-shadow: 3px 3px 2px darkgrey;
     float:right;
     margin-right: 4%;
+    margin-left: 1.5%;
 }
 footer h4 #k4 {
     text-shadow: none;
@@ -506,9 +487,87 @@ article {
     float:left;
     margin-left: 5%;
 }
+/*-------------- RESPOINSIVE   ---------*/
+/* slike dugmad*/
+@media all and (min-width: 720px) and (max-width: 1150px) {
+    
+    .parni,
+    .dizel,
+    .vagoni,
+    .elektricni,
+    .tramvaji,
+    .metro {
+    background-color:;/*#C73D41*/
+    box-shadow: none;
+    }
+    .r img {
+    background-color: none;
+    }
+    .container1 {
+    width: 700px;
+    margin-left: 4vw;
+    margin-right: auto;
+    }
+}
+@media all and (min-width: 1px) and (max-width: 450px) {
+    .parni,
+    .dizel,
+    .vagoni,
+    .elektricni,
+    .tramvaji,
+    .metro {
+    width: 99px;
+    height: 75px;
 
-
-
+}
+    .r img {
+    width: 99px;
+    height: 75px;
+    }
+    .container1 {
+    width:300px;
+    }
+}
+/*     Lampa    */
+@media all and (min-width: 501px) and (max-width: 750px) {
+    .voz-lampa #lampa img {
+    position: absolute;
+    top: 5%;
+    right:0px;
+    }
+    .voz-lampa .voz img {
+    width: 60%;
+    height: auto;
+}
+    .voz-lampa {
+    height: 550px;
+    }
+    footer {
+    height:40px;
+    }
+    
+}
+@media all and (min-width: 1px) and (max-width: 500px) {
+    .voz-lampa #lampa img {
+    position: absolute;
+    top: 5%;
+    right:0px;
+    }
+    .voz-lampa .voz img {
+    width: 70%;
+    height: auto;
+}
+    .voz-lampa {
+    height: 300px;
+    }
+}
+footer {
+    height:30px;
+}
+footer h4 {
+    text-shadow: none;
+    float:none;
+}
 
 
 
