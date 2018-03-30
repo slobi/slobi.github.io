@@ -1,8 +1,8 @@
 body {
      font-family: Tahoma, Arial, cursive;
      background-image: url(vozovi/pattern.png);
-     background-size: 100% auto;
-     width:100%;
+    /* background-size: 100% auto;
+     width:100%;*/
  }
 html, body {
     margin: 0;
@@ -13,7 +13,9 @@ html, body {
     width:100%;
 }
 section {
-    width: 100%;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .navbar {
@@ -76,7 +78,7 @@ section {
     width: 140px;  /*+min-*/
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    top:55px;
+    top:45px;  /*koliko je nisko*/
     font-weight: 400;
 }
 
@@ -103,6 +105,9 @@ section {
 .dropdown1:hover .dropdown-content1 {
     display: block;
     z-index: 9;
+}
+.navbar .dropdown1 a.ind {
+    text-indent: 10px;
 }
 
 
@@ -538,14 +543,14 @@ article {
     width: 99px;
     height: 75px;
     }
-    .container1 {
+   /* .container1 {
     width:300px;
     }
     .navbar {
     display: grid;
     grid-auto-columns: 100px;
     grid-gap: 10px;
-    } 
+    } */
 }
 /*     Lampa    */
 @media all and (min-width: 501px) and (max-width: 768px) {
@@ -605,6 +610,9 @@ article {
 @media all and (min-width: 1px) and (max-width: 380px) {
     .container1 {
         width:240px;
+    }
+    .dropdown-content1 a {
+        left: 20px;
     }
     }
 
