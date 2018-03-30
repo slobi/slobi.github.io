@@ -1,9 +1,16 @@
 body {
      font-family: Tahoma, Arial, cursive;
      background-image: url(vozovi/pattern.png);
+     background-size: 100% auto;
+     width:100%;
  }
-.sve {
-    width:1250px;
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 1350px;
+}
+.bootstrap-iso {
+    width:100%;
 }
 section {
     width: 100%;
@@ -106,6 +113,8 @@ section {
     position:relative;
     top:0px;
     width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 .parni,
 .dizel,
@@ -125,6 +134,11 @@ section {
 .r img {
     border-radius: 25px;
     box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
+}
+.r img:hover {
+    box-shadow: 10px 5px 10px black;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 .stretch {
   width: 1200px;
@@ -487,7 +501,7 @@ article {
     float:left;
     margin-left: 5%;
 }
-/*-------------- RESPOINSIVE   ---------*/
+/*-------------- RESPONSIVE   ---------*/
 /* slike dugmad*/
 @media all and (min-width: 720px) and (max-width: 1150px) {
     
@@ -529,7 +543,7 @@ article {
     }
 }
 /*     Lampa    */
-@media all and (min-width: 501px) and (max-width: 750px) {
+@media all and (min-width: 501px) and (max-width: 768px) {
     .voz-lampa #lampa img {
     position: absolute;
     top: 5%;
@@ -545,7 +559,12 @@ article {
     footer {
     height:40px;
     }
-    
+    footer <h4> {
+        
+    }
+    .bootstrap-iso {
+        overflow-x: hidden;
+    }
 }
 @media all and (min-width: 1px) and (max-width: 500px) {
     .voz-lampa #lampa img {
@@ -556,18 +575,21 @@ article {
     .voz-lampa .voz img {
     width: 70%;
     height: auto;
-}
+    }
     .voz-lampa {
     height: 300px;
     }
-}
-footer {
+    footer {
     height:30px;
-}
-footer h4 {
+    }
+    footer h4 {
     text-shadow: none;
     float:none;
-}
-
+    }
+@media all and (min-width: 1px) and (max-width: 330px) {
+    .container1 {
+        width:240px;
+    }
+    }
 
 
