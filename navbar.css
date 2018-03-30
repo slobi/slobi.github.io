@@ -541,6 +541,11 @@ article {
     .container1 {
     width:300px;
     }
+    .navbar {
+    display: grid;
+    grid-auto-columns: 100px;
+    grid-gap: 10px;
+    } 
 }
 /*     Lampa    */
 @media all and (min-width: 501px) and (max-width: 768px) {
@@ -580,13 +585,24 @@ article {
     height: 300px;
     }
     footer {
+    padding: 0;
+    margin-top: 10px;
     height:30px;
+    font-size: smaller;
+    }
+    footer h5 {
+    display: inline-table;
+    margin-top: 5px;
     }
     footer h4 {
     text-shadow: none;
     float:none;
     }
-@media all and (min-width: 1px) and (max-width: 330px) {
+    .bootstrap-iso {
+    overflow-x: hidden;
+    }
+}
+@media all and (min-width: 1px) and (max-width: 380px) {
     .container1 {
         width:240px;
     }
