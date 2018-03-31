@@ -229,7 +229,6 @@ footer h4 #k4 {
 
 .page {
     width: 90%;
-    /*height: 1800px;*/
     margin-left: 5%;
     margin-right:  5%;
     border: 2px solid black;
@@ -244,7 +243,7 @@ footer h4 #k4 {
     border-top-left-radius: 19px;
     position: relative;
     top: 0px;
-    text-indent: 20px;
+    text-indent: 5%;
     
 }
 .naslov h3 {
@@ -268,7 +267,7 @@ article {
     top: 15px;
     background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
     background: rgba(234, 121, 121, 0.7);
-    max-width:750px;
+    width:65%;
     float:left;
     margin-left: 3px;
 }
@@ -290,20 +289,22 @@ article {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    background-repeat: repeat-x;
 }
 /*   ---------klipovi   ---- */
 
 .klipovi {
     position: relative;
     width:60%;
-    margin-left:15%;
+    margin-left:20%;
     margin-right: 20%;
 }
 .klipovi iframe {
     width: 100%;
-    height:350px;
+    height:30vw;
     border: 1px solid white;
-    margin: 10%;
+    margin-top: 10%;
+    margin-bottom: 15px;
 }
 .klipovi .kraj {
     border: 1px solid white;
@@ -498,11 +499,15 @@ article {
     margin-top: 30px;
 }
 /*   -----footer  page  ----*/
-.go-nav {
+.foot-nav {
+    overflow:  ;
+}
+.foot-nav .go-nav {
+    overflow: auto;
     float:right;
     margin-bottom: 10px;
 }
-.cross {
+.foot-nav .cross {
     float:left;
     margin-left: 5%;
 }
@@ -543,14 +548,11 @@ article {
     width: 99px;
     height: 75px;
     }
-   /* .container1 {
-    width:300px;
+    .page {
+    margin-left: 2%;
+    margin-right: 3%;
+    width: 95%;
     }
-    .navbar {
-    display: grid;
-    grid-auto-columns: 100px;
-    grid-gap: 10px;
-    } */
 }
 /*     Lampa    */
 @media all and (min-width: 501px) and (max-width: 768px) {
@@ -562,7 +564,7 @@ article {
     .voz-lampa .voz img {
     width: 60%;
     height: auto;
-}
+    }
     .voz-lampa {
     height: 550px;
     }
@@ -574,6 +576,14 @@ article {
     }
     .bootstrap-iso {
         overflow-x: hidden;
+    }
+    .klipovi {
+    width:75%;
+    margin-left:12%;
+    }
+    .back-to-top img {
+        width: 90px;
+        height:  auto;
     }
 }
 @media all and (min-width: 1px) and (max-width: 500px) {
@@ -606,6 +616,17 @@ article {
     .bootstrap-iso {
     overflow-x: hidden;
     }
+    .page .clanak p {
+    width: 90%;
+    }
+    .klipovi {
+    width:90%;
+    margin-left:5%;
+    }
+     .back-to-top img {
+        width: 50px;
+        height:  auto;
+    }
 }
 @media all and (min-width: 1px) and (max-width: 380px) {
     .container1 {
@@ -614,6 +635,42 @@ article {
     .dropdown-content1 a {
         left: 20px;
     }
+    .page .clanak figure {
+    float:left;
+    margin-top: 20px;
+    margin-left: 1%;
+    display: inline-block;
+    width: 260px;
+    text-align: center;
+}
+    .page .clanak figure img {
+    width: 250px;
+    height:auto;
     }
-
-
+}
+@media all and (min-width: 381px) and (max-width: 1280px) {
+    .page .clanak figure {
+    float:left;
+    margin-top: 20px;
+    margin-left: 3%;
+    }
+}
+@media all and (min-width: 1px) and (max-width: 1050px) {
+    .foot-nav {
+    overflow: auto;
+}
+.foot-nav .go-nav img {
+    width: 50%;
+    height:  auto;
+    overflow: ;
+    float:right;
+    margin-bottom: 10px;
+}
+.foot-nav .cross img {
+    width: 40%;
+    height: auto;
+    float:left;
+    overflow:  auto;
+    margin-left: 5%;
+}
+} 
